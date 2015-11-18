@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'extra/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "extra_ruby"
+  spec.name          = "extra"
   spec.version       = Extra::VERSION
   spec.authors       = ["Diego Carrion"]
   spec.email         = ["dc.rec1@gmail.com"]
