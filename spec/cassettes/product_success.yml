@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.cnova.com/api/v2/loads/products
+    body:
+      encoding: UTF-8
+      string: !binary |-
+        H4sIAHFlS1YAAz2OTUvDQBCG/0qYc5qaWr9yEAoWLBSNUvBQcpgk43Z0s0l3
+        J2IQ/7vjYr3NPs/M++7+C8L7uGkfPRt2UAB9iseZH+tplkMKgaxlZ3YsltSu
+        f23yrFZdS6HxPAj37l+tyk3C7rRRe3StujsNF7RJiYaC8vXqQWm+OF9eXF5d
+        x6hXHK2Unhutyc+0GC39PW9SaFDI9H7achAo9rCjIHSrZVCl8EJsDorzFLbk
+        jBygWCjlNk5K708LyxTwA9libelpRCcsU7zjLv5Mkw8iQzGfR9AdR7THkXzW
+        9F1W+0izt8FA9V39AJWtIzk6AQAA
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Type:
+      - application/gzip
+      Client-Id:
+      - F6Y2DJkFtLL2
+      Access-Token:
+      - bEptWFqM72U0
+      Content-Length:
+      - '246'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Tue, 17 Nov 2015 17:35:45 GMT
+      Server:
+      - Apache
+      X-Cnection:
+      - close
+      X-Powered-By:
+      - Servlet/2.5 JSP/2.1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJlcnJvcnMiOlt7ImNvZGUiOiIwMDEuMTAyIiwiaHR0cFN0YXR1cyI6IjQw
+        MCIsInR5cGUiOiJQcm9kdWN0TG9hZHNFeGNlcHRpb25zIiwibWVzc2FnZSI6
+        Ikpzb24gaW52w6FsaWRvLiBWZXJpZmlxdWUgbyBKc29uIGVudmlhZG8uIiwi
+        c2t1U2VsbGVySWQiOiIifV19
+    http_version: 
+  recorded_at: Tue, 17 Nov 2015 17:35:46 GMT
+recorded_with: VCR 2.9.3

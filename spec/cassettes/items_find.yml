@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.cnova.com/api/v2/sellerItems/3454385
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Type:
+      - application/json
+      Client-Id:
+      - F6Y2DJkFtLL2
+      Access-Token:
+      - bEptWFqM72U0
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Tue, 17 Nov 2015 17:35:45 GMT
+      Server:
+      - Apache
+      X-Powered-By:
+      - Servlet/2.5 JSP/2.1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJlcnJvcnMiOlt7ImNvZGUiOiI0MDQiLCJodHRwU3RhdHVzIjoiNDA0Iiwi
+        dHlwZSI6IkFQSUV4Y2VwdGlvbiIsIm1lc3NhZ2UiOiJSZWN1cnNvIG7Do28g
+        ZW5jb250cmFkbyIsInNrdVNlbGxlcklkIjoiIn1dfQ==
+    http_version: 
+  recorded_at: Tue, 17 Nov 2015 17:35:45 GMT
+recorded_with: VCR 2.9.3

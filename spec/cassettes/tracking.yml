@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.cnova.com/api/v2/orders/9099885601/trackings/sent
+    body:
+      encoding: UTF-8
+      string: '{"occurredAt":"2015-11-17T16:32:42-02:00","url":"http://","number":"1","sellerDeliveryId":"0","cte":"0","carrier":{"name":"SjF","cnpj":"000000000"},"invoice":{"cnpj":"000000000000","number":"0","serie":"0","issuedAt":"2015-11-16T16:32:42-02:00","accessKey":"00000000000000000000000000000000000000000000","linkXml":"0","linkDanfe":"0"}}'
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Type:
+      - application/json
+      Client-Id:
+      - F6Y2DJkFtLL2
+      Access-Token:
+      - bEptWFqM72U0
+      Content-Length:
+      - '335'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Wed, 18 Nov 2015 13:12:56 GMT
+      Server:
+      - Apache
+      X-Cnection:
+      - close
+      X-Powered-By:
+      - Servlet/2.5 JSP/2.1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJlcnJvcnMiOlt7ImNvZGUiOiIwMDkuMDAxIiwiaHR0cFN0YXR1cyI6IjQw
+        MCIsInR5cGUiOiJUcmFja2luZ0V4Y2VwdGlvbiIsIm1lc3NhZ2UiOiJQZWxv
+        IG1lbm9zIHVtIGl0ZW0gZGV2ZSBzZXIgaW5mb3JtYWRvIG5hIG9wZXJhw6fD
+        o28gZGUgdHJhY2tpbmciLCJza3VTZWxsZXJJZCI6IiJ9XX0=
+    http_version: 
+  recorded_at: Wed, 18 Nov 2015 13:12:56 GMT
+recorded_with: VCR 2.9.3
