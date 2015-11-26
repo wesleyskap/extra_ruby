@@ -7,5 +7,25 @@ module Extra
     def self.stock(sku_id, params = {})
       put("sellerItems/#{sku_id}", params)
     end
+
+    def self.load_stocks(params = {})
+      put("loads/sellerItems/stocks", params)
+    end
+
+    def self.load_prices(params = {})
+      put("loads/sellerItems/prices", params)
+    end
+
+    def self.update_price(sku_id, params = {})
+      put("sellerItems/#{sku_id}/prices", params)
+    end
+
+    def self.update_stock(sku_id, params = {})
+      put("sellerItems/#{sku_id}/stock", params)
+    end
+
+    def self.load_trackings(params = {})
+      post("loads/orders/trackings/sent", params)
+    end
   end
 end
