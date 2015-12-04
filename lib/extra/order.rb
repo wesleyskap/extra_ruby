@@ -2,7 +2,7 @@ module Extra
   class Order < Base
     { unapproved: :new, approved: :approved, canceled: :canceled }.each do |method_name, status|
       define_singleton_method method_name do |page: 1|
-        get("orders/status/#{status}", _offset: ((page - 1) * 50), _limit: 50)
+        get("orders/status/#{status}", _offset: ((page - 1) * 50), _limit: 50).first['orders']
       end
     end
 

@@ -29,7 +29,11 @@ module Extra
     end
 
     def self.execute(method, path, params = {}, content_type: :json, &block)
-      params[:payload] = to_payload(params[:body], content_type: content_type) if params[:body]
+      begin
+        params[:payload] = JSON.generate(params[:body]) if params[:body]
+      rescue
+        params[:payload] = params[:body]
+      end
       headers = { content_type: "application/#{content_type}", 'client_id' => app_token, 'access_token' => auth_token }
       RestClient::Request.execute({ method: method, url: "#{endpoint}/#{path}", headers: headers }.merge(params), &block)
     end
