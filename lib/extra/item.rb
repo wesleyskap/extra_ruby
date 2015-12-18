@@ -27,5 +27,9 @@ module Extra
     def self.load_trackings(params = {})
       post("loads/orders/trackings/sent", params)
     end
+
+    def self.all(page: 1)
+      get('sellerItems', {_offset: ((page - 1) * 100), _limit: 100})
+    end
   end
 end
