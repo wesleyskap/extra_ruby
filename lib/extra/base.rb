@@ -9,7 +9,7 @@ module Extra
     end
 
     def persisted?
-      self[:persisted]
+      @data[:persisted]
     end
 
     def self.get(path, params)
